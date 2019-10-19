@@ -1,0 +1,122 @@
+body
+{
+    background-image: url('images/sydney.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.navbar-brand
+{
+    font-family: Bradley Hand ITC;
+    font-weight: bolder;
+    /* color: gold; */
+}
+header
+{
+    font-size: 4vw;
+}
+span
+{
+    font-family: AR Berkley;
+}
+#oned
+{
+    color: gold;    
+}
+#oneb
+{
+    color: lightgreen;
+}
+header p
+{
+    float: left;
+}
+#intro
+{
+    display: inline-block;
+    font-family: AR Berkley;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+    background-color: rgba(192,192,192,0.7);
+    margin-bottom: 10vh;
+}
+#inquiry
+{
+    background-color: rgba(192,192,192,0.7);
+    max-width: 18vw;
+    font-weight: bold;
+    margin-left: 3vw;
+    float: left;
+}
+#inquiry h1
+{
+    font-family: Agency FB;
+    background-color: orange;
+    padding : 1.8vw;
+    margin-top: -2vh;
+}
+#inquiry #type
+{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+#inquiry p
+{
+    margin-left: 3vw;
+    display: inline-block;
+}
+form
+{
+    font-family: Candara;
+    font-size: 1.1vw;
+}
+.text
+{
+    min-width: 15vw;
+    min-height: 7vh;
+    margin-left: 1.5vw;
+    border: 0px solid black;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}
+#inqsubmit
+{
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: orange;
+}
+#container
+{
+    float: right;
+    background-color: rgba(192,192,192,0.7);
+    min-width: 60vw;
+    min-height: 100vh;
+    margin-right: 10vw;
+}
+#container h1
+{
+    font-family: Agency FB;
+    background-color: orange;
+    padding : 1.8vw;
+    margin-top: -2vh;
+}
+table
+{
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-family: Agency FB;
+    font-size: 2vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+td
+{
+    width: 20vw;
+    height: 8vh;
+}

@@ -1,0 +1,15 @@
+body
+{
+    background-image: url('images/sydney.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.navbar-brand
+{
+    font-family: Bradley Hand ITC;
+    font-weight: bolder;
+    /* color: gold; */
+}

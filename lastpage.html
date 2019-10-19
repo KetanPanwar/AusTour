@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Complete Your Booking</title>
+        <link rel="stylesheet" href="lastpage.css">
+        <link rel="stylesheet" href="css/bs.css">
+        <link rel="icon" type="image/jpg" href="images/logo.jpg">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                    
+              <div class="navbar-header">
+                  
+                <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" style="display:inline;margin-top: -5px;margin-right: 10px;">Traveler's Bliss</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="Tourism.php">Home</a></li>
+                <li><a href="search_flights.php">Flights</a></li>
+                <li><a href="hotel package3.html">Hotels</a></li>
+                <li><a href="package 3.html">Packages</a></li>
+                <li><a href="feedback.php">Rating</a></li>
+                <li><a href="reviews.php">Feedback</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup_page.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login_page.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+                  <header style="padding-top: 10vh;">
+                        <p><span id="onea">Discover </span><span id="oneb">Paradise </span><span id="onec">In </span><span id="oned">Australia </span></p>
+                       
+            
+                    </header>
+                    <div id="intro"style="margin-top: 5vh;">
+                        <p align="center">Australia is a country and continent surrounded by the Indian and Pacific oceans. Its major cities – Sydney, Brisbane, Melbourne, Perth, Adelaide – are coastal. Its capital, Canberra, is inland. The country is known for its Sydney Opera House, the Great Barrier Reef, a vast interior desert wilderness called the Outback, and unique animal species like kangaroos and duck-billed platypuses</p>
+                    </div>
+                    <div id="inquiry">
+                        <h1 align="center">Send an Inquiry</h1>
+                        <form>
+                        <section id="type">
+                           <p> <input  type="radio" name="tour">Tour</p>
+                            <p><input class="select" type="radio" name="ticket">Ticket</p>
+                            <p><input   type="radio" name="visa">Visa</p>
+                            <p><input class="select" type="radio" name="hotel">Hotel</p>
+                        </section>
+                        <input  class="text" type="text" placeholder="      Your Name" width="600">
+                        <input class="text" type="text" placeholder="       Your Email-Id">
+                        <input class="text" type="text" placeholder="      Your Mobile/Telephone No">
+                        <input class="text" type="text" placeholder="       Your Location">
+                        <input class="text" type="textbox" placeholder="        Your Queries">
+                        <input id="inqsubmit" type="submit">
+                        </form>
+            
+                    </div>
+        <div id="container">
+            <h1>Your Itinerary : </h1>
+            <table style="border: 1px solid transparent">
+                <tr>
+                    <td>Name</td>
+                    <td id="name">Info</td>
+                </tr>
+                <tr>
+                        <td>No of Guests</td>
+                        <td id="guest">Info</td>
+                </tr>
+                <tr>
+                        <td>Contact Info</td>
+                        <td id="contact">Info</td>
+                </tr>
+                <tr>
+                        <td>Email Address</td>
+                        <td id="email">Info</td>
+                </tr>
+                <tr>
+                        <td>Your Location</td>
+                        <td id="loc">India</td>
+                </tr>
+                <tr>
+                        <td>Flight Departure</td>
+                        <td id="dep">Info</td>
+                </tr>
+                <tr>
+                        <td>Flight Arrival</td>
+                        <td id="arr">Info</td>
+                </tr>
+                <tr>
+                        <td>Type of Package</td>
+                        <td id="pack">Info</td>
+                </tr>
+                <tr>
+                        <td>Total Cost</td>
+                        <td id="cost">Info</td>
+                </tr>
+            </table>
+            <!-- <section>
+                <input type="textbox" placeholder="Enter Feedback">
+            </section> -->
+        </div>
+        <script>
+            var a=document.getElementById("name");
+            a.innerHTML=localStorage.getItem('name');
+            var b=document.getElementById("contact");
+            b.innerHTML=localStorage.getItem('contact');
+            var c=document.getElementById("email");
+            c.innerHTML=localStorage.getItem('email');
+            var d=document.getElementById("dep");
+            d.innerHTML=localStorage.getItem('indc');
+            var e=document.getElementById("arr");
+            e.innerHTML=localStorage.getItem('ozc');
+            var f=document.getElementById("guest");
+            f.innerHTML=parseInt(localStorage.getItem('infants'))+parseInt(localStorage.getItem('adults'))+parseInt(localStorage.getItem('children'));
+            var g=document.getElementById("cost");
+            var h=localStorage.getItem('pack');
+            var i;
+            var j=document.getElementById("pack");
+            if(h==1)
+                {
+                    j.innerHTML="Economy";
+                    i=47695;
+                }
+                if(h==2)
+                {
+                    j.innerHTML="Standard";
+                    i=77401;
+                }
+                if(h==3)
+                {
+                    j.innerHTML="Deluxe";
+                    i=143628;
+                }
+            g.innerHTML=parseInt(localStorage.getItem('flight_cost').slice(4,))+i;
+            
+        </script>
+    </body>
+</html>

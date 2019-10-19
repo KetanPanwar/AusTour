@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Package 1</title>
+  <link rel="stylesheet" type="text/css" href="project1.css">
+  <link rel="stylesheet" href="bs.css">
+  <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>    
+<body background-color: palegoldenrod>
+<h2 style="text-align:center; font-family: agency FB">Your Current Package</h2>
+<h1 style="text-align:center; font-family: agency FB">Highlights of Your Tour(4N/5D)</h1> 
+<div class="container">
+  <div class="mySlides" align="middle">
+    <div class="numbertext">1 / 6</div>
+    <img src="sydney.jpg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">2 / 6</div>
+    <img src="bluemountains.jpeg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">3 / 6</div>
+    <img src="Hunter_Valley.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">4 / 6</div>
+    <img src="zenith-beach.jpg" style="width:100%">
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">5 / 6</div>
+    <img src="port-stephens.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">6 / 6</div>
+    <img src="newcastle.jpg" style="width:100%">
+  </div>    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="sydney.jpg" style="width:100%" onclick="currentSlide(1)" alt="Sydney (Day 1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bluemountains.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Blue Mountains (Day 2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Hunter_Valley.jpg" style="width:100%" onclick="currentSlide(3)" alt="Hunter Valley (Day 3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="zenith-beach.jpg" style="width:100%" onclick="currentSlide(4)" alt="Zenith Beach (Day 4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="port-stephens.jpg" style="width:100%" onclick="currentSlide(5)" alt="Port Stephens (Day 4)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="newcastle.jpg" style="width:100%" onclick="currentSlide(6)" alt="Newcastle (Day 5) ">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<h1 style="font-family: agency FB; text-align: center;">Day wise Itinerary</h1> <br>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 1</h2>
+<div class="parallax" style="background-image: url('sydney - Copy.jpg');"></div>
+<div  style="height:350px;background-color:palegoldenrod;font-size:26px; font-family: agency FB;text-align: center;">
+ <blockquote style="font-size: 30px"> -->> Sydney to Blue Mountains (100 km) <<--</blockquote> <br>
+Head west for the Blue Mountains, named for their distinctive blue haze<br>They
+are one of the most spectacular and captivating wilderness parks in the &nbsp&nbspcountry.<br>
+The major scenic attraction is Echo Point, from where the best views of the
+&nbsp&nbspJamison Valley and the magnificent Three Sisters rock formation are.<br> Visit the
+spectacular Wentworth Falls and enjoy a trip on the scenic railway with &nbsp&nbspdramatic
+views of the Jamieson Valley.<br> Visit the picturesque town of Leura and dine in
+one of the many fine restaurants.
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB">Day 2</h2>
+<div class="parallax" style="background-image: url('bluemountains - Copy.jpeg');" ></div>
+<div class="maintxt"style="height:250px;background-color:palegoldenrod;font-size:26px; font-family: agency FB">
+<blockquote style="font-size: 30px"> -->> Blue Mountains to Hunter Valley (212 km) <<--</blockquote><br>
+If you wish, spend some more time exploring the Blue Mountains before your
+&nbsp&nbspdeparture to the Hunter Valley.<br>Depart the Blue Mountains, travelling north
+through the towns of Mt Victoria and &nbsp&nbspBilpin.<br> Near Kurrajong, join the winding
+Putty Road which takes you through the Wollemi &nbsp&nbspNational Park to reach the
+Hunter Valley.
+
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB">Day 3</h2>
+<div class="parallax" style="background-image: url('Hunter_Valley - Copy.jpg');"></div>
+<div class="maintxt" style="height:200px;background-color:palegoldenrod;font-size:26px; font-family: agency FB">
+A full day to explore the wineries, art and gourmet delights that is the Hunter
+Valley.<br> We suggest planning ahead which wineries you may like to visit – you
+will see they &nbsp&nbspare in close proximity.<br> Discover local artisans and beautiful
+gardens.<br> Tonight dine in one of the many gourmet restaurants in the area.
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB">Day 4</h2>
+<div class="parallax" style="background-image: url('zenith-beach - Copy.jpg');"></div>
+<div class="maintxt" style="height:360px;background-color:palegoldenrod;font-size:26px; font-family: agency FB">
+<blockquote style="font-size: 30px">-->> Hunter Valley to Port Stephens (100 km) <<--</blockquote><br>
+Leave the Hunter Valley and travel south to Port Stephens.<br> Known as the
+Blue Water Wonderland, Port Stephens is a natural bay 2 1/2 times &nbsp&nbspthe size of
+Sydney Harbour and almost enclosed by two dormant volcanic &nbsp&nbspheadlands.<br> There
+is fabulous seafood and over 26 golden sandy beaches to explore.<br> Take an
+afternoon cruise with the dolphins (at own expense) or book ahead for a &nbsp&nbspcruise
+tomorrow morning. 
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB">Day 5</h2>
+<div class="parallax" style="background-image: url('newcastle - Copy.jpg');"></div>
+<div class="maintxt" style="height:360px;background-color:palegoldenrod;font-size:26px; font-family: agency FB">
+<blockquote style="font-size: 30px">-->> Port Stephens to Sydney (206 km) <<--</blockquote><br>
+Depart Port Stephens and head south, but before reaching the Pacific Highway
+&nbsp&nbspdetour to Newcastle and past Lake Macquarie.<br> Continue along the coast through
+The Entrance and Gosford, before joining the &nbsp&nbspPacific Highway as you travel into
+the city and over the majestic Sydney Harbour &nbsp&nbspBridge.<br>
+Your car is booked until tomorrow and should be dropped off at the city or
+airport, &nbsp&nbspby the same time as it was picked up on Day 1, to avoid any additional
+charges.
+
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+          
+    <div class="navbar-header">
+        
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" style="display:inline;margin-top: -5px;margin-right: 10px;">Traveler's Bliss</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Tourism.html">Home</a></li>
+      <li><a href="search_flights.php">Flights</a></li>
+      <li><a href="hotel package3.html">Hotels</a></li>
+      <li><a href="package 3.html">Packages</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup_page.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login_page.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<button type="button" class="block" onclick="handle1()">Proceed</button>
+<script>
+  function handle1()
+            {
+                window.open("finalpage.php","_self");
+            }
+</script>
+
+</body>
+</html>

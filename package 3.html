@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Package 3</title>
+  <link rel="stylesheet" type="text/css" href="project1.css">
+  <link rel="stylesheet" href="bs.css">
+  <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+<h2 style="text-align:center">Your Current Package</h2>
+<h1 style="text-align:center; font-family: agency FB">Highlights of Your Tour (9N/10D)</h1> 
+<div class="container">
+  <div class="mySlides" align="middle">
+    <div class="numbertext">1 / 6</div>
+    <img src="melbourne.jpg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">2 / 6</div>
+    <img src="Fitzroy Gardens.jpg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">3 / 6</div>
+    <img src="Great Ocean Road.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">4 / 6</div>
+    <img src="agold-coast-surfers-paradise.jpg" style="width:100%">
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">5 / 6</div>
+    <img src="Sailaway Sunset Sail.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">6 / 6</div>
+    <img src="Green Island.jpg" style="width:100%">
+  </div>    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="melbourne.jpg" style="width:100%" onclick="currentSlide(1)" alt="Melbourne (Day 1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Fitzroy Gardens.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fitzroy Gardens (Day 2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Great Ocean Road.jpg" style="width:100%" onclick="currentSlide(3)" alt="Great Ocean Road (Day 3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="agold-coast-surfers-paradise.jpg" style="width:100%" onclick="currentSlide(4)" alt="Gold Coast Surfers Paradise (Day 4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Sailaway Sunset Sail.jpg" style="width:100%" onclick="currentSlide(5)" alt="Sailaway Sunset Sail (Day 6)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Green Island.jpg" style="width:100%" onclick="currentSlide(6)" alt="Green Island (Day 7) ">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<h1 style="font-family: agency FB; text-align: center;">Day wise Itinerary</h1> <br>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 1</h2>
+<div class="parallax" style="background-image: url('melbourne - Copy.jpg');"></div>
+<div class="maintxt" style="height:370px">
+ <blockquote style="font-size: 30px"> -->> Arrival Melbourne||Evening at Leisure <<--</blockquote> <br>
+Experience the culture, romance and dreamy architecture of Australia's coolest destinations with this package, commencing upon arrival in Melbourne.<br> With the art galleries, theatres, landscapes, gardens, parks, Victorian-era architecture and museums, Melbourne is the cultural hub of Australia.Upon arrival, clear immigration and board your coach for the transfer to Melbourne city. <br> Upon arrival, you would be transferred in a shared coach/bus (seat-in-coach or SIC basis) to Melbourne Hotel .<br> Evening at leisure
+In the  evening, guests can opt for an optional tour to Phillip Island.<br>
+
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 2</h2>
+<div class="parallax" style="background-image: url('Fitzroy Gardens - Copy.jpg');" ></div>
+<div class="maintxt" style="height:900px">
+<blockquote style="font-size: 30px"> -->> City Tour| Melbourne and Melbourne Cricket Ground Tour <<--</blockquote><br>
+With art galleries, theatres, landscapes gardens, parks, Victorian-era architecture and museums, Melbourne is a melting pot of Australian cultural.<br> Post breakfast, embark on a ride to explore the attractions of Melbourne with a City Tour on a SIC basis and would last for 3 - 4 hours.<br>Coach will pick you up from your hotel for your transfer to the corner of Flinders and Russell Street at Federation Square, the departure point of your tour. <br>At 8.15am join your coach to commence a morning tour of Melbourne.<br>
+<ul>City tour Generally covers below spots :-
+      <li>Queen Victoria Market.</li>
+      <li>Fitzroy Gardens.</li>
+      <li>Albert Park - Grand Prix race track.</li>
+      <li>Federation Square.</li>
+      <li>Shrine of Remembrance.</li>
+      <li>Southbank Waterfront precinct.</li>
+      <li>St Paul's Cathedral.</li>
+      <li>Bolte Bridge.</li>
+      <li>Fitzroy Gardens and Captain Cook's Cottage.</li>
+</ul>
+Post City tour we will move towards Melbourne Cricket Ground Tour.<br>The MCG Tour gives the visitor the opportunity to relive their great sporting memories through a comprehensive tour of this marvellous stadium. <br>it takes aboout 1- 1.5 hts to Finish the MCG tour.<br>Post Tour rest day is at leisure.<br> Suggest You can take taxi & move towards Lunch or  for some shopping within the city on own.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 3</h2>
+<div class="parallax" style="background-image: url('Great Ocean Road - Copy.jpg');"></div>
+<div class="maintxt" style="height:700px">
+<blockquote>-->> Melbourne | Great Ocean Road Tour <<--</blockquote><br>
+Post breakfast, embark on one of Australia's most scenic drives on the Great Ocean Road, in a comfortable shared coach/bus (seat-in-coach or SIC basis).<br>Coach will pick you up from your hotel for your transfer to the corner of Flinders and Russell Street at Federation Square, the departure point of your tour.<br> At 8.00am join your coach to commence a full day tour to the Great Ocean Road.Tour Operates daily & concludes or Finishes  at approximately 8.00pm, followed by hotel drop offs.<br>
+<ul>Tour Includes:
+      <li>Great Ocean Road.</li>
+      <li>The Twelve Apostles.</li>
+      <li>Loch Ard Gorge.</li>
+      <li>London Bridge.</li>
+</ul>
+Post your tour you can proceed to enjoy  a delicious dinner at an Indian restaurant ( Optional)nearby and then retire to the comfortable hotel room for the night.<br> Overnight stay in Melbourne.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 4</h2>
+<div class="parallax" style="background-image: url('agold-coast-surfers-paradise - Copy.jpg');"></div>
+<div class="maintxt" style="height:300px">
+<blockquote style="font-size: 30px">-->> Transfer to Gold Coast | Day at leisure <<--</blockquote><br>
+Post breakfast, make your way to the airport on SIC basis. Upon arrival in Brisbane, you would be transferred in a shared coach/bus (seat-in-coach or SIC basis) to Gold Coast - a vibrant city, predominantly known for its beaches, theme parks, nightlife, rain forests and mountains.<br> Upon reaching, relax for a while and spend the rest of the day at leisure.<br>
+Suggest to have an experience of Jet Boat Ride ( optional ) or if you are with kids you can opt for Fire truck Tour.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 5</h2>
+<div class="parallax" style="background-image: url('hot air ballon.jpg');"></div>
+<div class="maintxt" style="height:550px">
+<blockquote style="font-size: 30px">-->> Day At Leisure ||Free to Do any Optional <<--</blockquote><br>
+Post Breakfast Day  is at leisure.<br> we can suggest below optional activitiesyou can choose from :-<br>
+Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. <br>It is Australia's largest theme park with over 40 rides and attractions, including <br>
+<ul>Tour Includes:
+      <li>five roller coasters.</li>
+      <li>30 Minute Hot Air Balloon Ride.</li>
+      <li>Paradise Jetboat - Broadwater Adventure Ride.</li>
+      <li>Skydive Byron Bay up to 14,000ft tandem skydive.</li>
+</ul>
+
+Later, retire to the hotel room for the night.<br>
+
+</div>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 6</h2>
+<div class="parallax" style="background-image: url('Sailaway Sunset Sail - Copy.jpg');"></div>
+<div class="maintxt" style="height:500px">
+<blockquote style="font-size: 30px">-->> Flight to Cairns | Optional tour to Kuranda Scenic Railway Tour <<--</blockquote><br>
+On this day, head to the next destination of your holiday - Cairns, a laid-back city amidst rainforests with stunning waterfront parks, shops and restaurants.<br> After breakfast at the hotel, embark in a shared coach/bus to reach the airport for a flight to Cairns.<br> From the Cairns airport, make your way to the hotel.<br> Check in and relax for a while in the comfortable hotel room.<br> The rest of the day would be at leisure.<br> If reaching Cairns by 10 am, then you could choose the scenic, optional Kuranda Scenic Railway Tour (at an additional cost) for incredible views of Australia’s Tropical Rainforests.<br> Else, consider an ATV ride or horseback riding adventure.<br>
+</div>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 7</h2>
+<div class="parallax" style="background-image: url('Green Island - Copy.jpg');"></div>
+<div class="maintxt" style="height:700px">
+<blockquote style="font-size: 30px">-->> 1 Day Green Island + Lunch + Semi-Sub ex Cairns <<--</blockquote><br>
+Cruise to Green Island in comfort aboard a modern air-conditioned catamaran.<br> Tropical and enchanting Green Island is an idyllic coral cay on Australia's Great Barrier Reef where you spend 4 hours viewing the coral reef and fish life, relaxing on the white sandy beach and exploring the walking tracks that lead through the National Park.<br>
+Enjoy the optional activities such as the choice of a glass bottom boat tour or snorkelling equipment for the day, Semi Submarine tour, self-guided island walks or simply relax on the white sandy beach. Enjoy lunch on board Big Cat in air conditioned comfort (optionals mentioned are not part of the Package )Duration:4 - 6 hours
+<ul>What to Bring:
+      <li>Towel.</li>
+      <li>Hat.</li>
+      <li>Sunscreen.</li>
+      <li>Swimwear.</li>
+      <li>Cash for drinks and snacks.</li>
+      <li>Credit card or drivers licence for snorkelling deposit</li>
+</ul>
+By night, make your way to an Indian restaurant near the hotel (transfers not included) and head back to your room later for the night.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 8</h2>
+<div class="parallax" style="background-image: url('sydney - Copy.jpg');"></div>
+<div class="maintxt" style="height:600px">
+<blockquote style="font-size: 30px">-->> Arrival Sydney || Show Boat Dinner Cruise <<--</blockquote><br>
+Check out from the hotel after breakfast and bid adieu to the stunning city of Melbourne.<br> Reach the airport to board a flight to Sydney - the cosmopolitan hub of Australia.<br> A fun and charismatic city for gastronomes, art lovers and outdoorsy people, Sydney is just the place to be for a relaxing holiday.<br> From the Sydney Airport, get transferred to your place of stay on a shared basis in a coach/bus (seat-in-coach or SIC basis).<br>
+
+After relaxing for a while in the comfortable hotel room, you will head to Kings Street Wharf for the Showboat Dinner Cruise (optional). <br>Feast your eyes on the glittering cityscape while dining on contemporary cuisines. <br>Watch Sydney's well-known and most photographed landmarks dolled up in golden lights.<br> Dresscode in Showboat: Men are required to wear trousers and Women are Expected to be dress semi-formal or formal.<br> Shorts and thongs and untidy attire is unacceptable. <br>Guests not meeting this requirementmay be refused boarding.<br>
+Post a day of discovering Sydney, get some much-needed rest with a comfortable overnight stay at the hotel.<br>
+
+
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 9</h2>
+<div class="parallax" style="background-image: url('newcastle - Copy.jpg');"></div>
+<div class="maintxt" style="height:600px">
+<blockquote style="font-size: 30px">-->> Magical Manly & Beyond Sydney city tour +Combination 2 Ticket <<--</blockquote><br>
+Post breakfast you will have a hotel pick for exploring the Magical Manly & Beyond(Hotel Pick Only).<br>The morning Half Day Sydney Sights tour is a perfect option for those who have a tight schedule or those who don't wish to be on tour for a full day.<br> This tour is a thorough introduction to Sydney and its neighbours.<br> Travel to Manly Beach for a leisurely stroll along The Corso to see the beach that has made Manly famous.<br> Along the way to Manly, you will view Darling Harbour and cross the Sydney Harbour Bridge.<br> Stop at Milsons Point for spectacular views of the Sydney Opera House and Harbour Bridge.<br> Stop at North Head Lookout for a panoramic view of the Pacific Ocean. <br>Enjoy your time at Manly beach before heading back to Sydney via the exclusive and trendy suburbs of Neutral Bay and Mosman.<br> You may choose to upgrade to include a luncheon cruise to create a perfect end to the day. <br>Conclude your morning tour at either King Street Wharf or Circular Quay.Duration of tour is between 3- 4 hrs .<br>
+POst city Tour Use your Combination 2 Ticket and explore two best attractions of your Choice .Any2 can be chosen between : Sydney Aquarium, The Sydney Tower Eye, Wildlife Sydney, Madame Tussauds.<br>
+
+
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 10</h2>
+<div class="parallax" style="background-image: url('departure.jpg');"></div>
+<div class="maintxt" style="height:250px">
+<blockquote style="font-size: 30px">-->> Departure from Sydney <<--</blockquote><br>
+After a sumptuous breakfast at hotel, check out of the hotel and board your coach for your transfer to the Sydney airport.<br>
+Bid goodbye to Australia with Memories Unlimited!<br>
+
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+          
+    <div class="navbar-header">
+        
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" style="display:inline;margin-top: -5px;margin-right: 10px;">Traveler's Bliss</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Tourism.html">Home</a></li>
+      <li><a href="search_flights.php">Flights</a></li>
+      <li><a href="hotel package3.html">Hotels</a></li>
+      <li><a href="package 3.html">Packages</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup_page.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login_page.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<button type="button" class="block" onclick="handle1()">Proceed</button>
+<script>
+  function handle1()
+            {
+                window.open("finalpage.php","_self");
+            }
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  font-family: agency FB;
+  margin: 0;
+  background-color: palegoldenrod;
+}
+* {
+  box-sizing: border-box;
+
+}
+
+img {
+  vertical-align: middle;
+}
+.container {
+  background-color: palegoldenrod;
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.parallax {
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: palegoldenrod;
+    margin: 0px;
+}
+.navbar-brand
+{
+    font-family: Bradley Hand ITC;
+    font-weight: bolder;
+    /* color: gold; */
+}
+.maintxt
+{
+  background-color:palegoldenrod;font-size:26px; font-family: agency FB;text-align: center;
+}
+.block {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: peru;
+    padding: 20px 28px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-family: agency FB;
+    border-radius: 20px;
+}
+input{
+  margin-right: 5em;
+
+}

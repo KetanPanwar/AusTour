@@ -1,0 +1,355 @@
+body
+{
+    background-image: url('images/sydney.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+    background-attachment: fixed;
+    /* margin-bottom: 2vh; */
+}
+.navbar-brand
+{
+    font-family: Bradley Hand ITC;
+    font-weight: bolder;
+    /* color: gold; */
+}
+/* nav
+{
+    margin-bottom: 50px;
+} */
+header
+{
+    font-size: 4vw;
+}
+span
+{
+    font-family: AR Berkley;
+}
+#oned
+{
+    color: gold;    
+}
+#oneb
+{
+    color: lightgreen;
+}
+header p
+{
+    float: left;
+}
+
+#intro
+{
+    display: inline-block;
+    font-family: AR Berkley;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+    background-color: rgba(192,192,192,0.7);
+    margin-bottom: 10vh;
+}
+#inquiry
+{
+    background-color: rgba(192,192,192,0.7);
+    max-width: 18vw;
+    font-weight: bold;
+    margin-left: 3vw;
+    float: left;
+}
+#inquiry h1
+{
+    font-family: Agency FB;
+    background-color: orange;
+    padding : 1.8vw;
+    margin-top: -2vh;
+}
+#inquiry #type
+{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+#inquiry p
+{
+    margin-left: 3vw;
+    display: inline-block;
+}
+form
+{
+    font-family: Candara;
+    font-size: 1.1vw;
+}
+.text
+{
+    min-width: 15vw;
+    min-height: 7vh;
+    margin-left: 1.5vw;
+    border: 0px solid black;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}
+#inqsubmit
+{
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: orange;
+}
+#container
+{
+    float: right;
+}
+#container
+{
+    background-color: rgba(192,192,192,0.7);
+    max-width: 60vw;
+    font-weight: bold;
+    margin-right: 10vw;
+    min-width: 60vw;
+    min-height: 60vh;
+    font-family: Agency FB;
+    margin-bottom: 10vh;
+}
+#pack1a
+{
+    float: left;
+    /* margin-right: 5vw; */
+    background-color: orange;
+    padding: 2vh 15vw 2vh 2vw;
+    margin-top: -1.4vh;
+    border-right: 4px black solid;
+}
+#pack1b
+{
+    float: right;
+    background-color: yellowgreen;
+    padding: 2vh 2vw 2vh 15.28vw;
+    margin-top: -1.4vh;
+    align-content: center;
+
+}
+#header
+{
+    background-color: rgb(89,196,90);
+    font-family: Agency FB;
+    font-size: 2vw;
+    padding: 2vh 0 2vh 0;
+    margin-top: -2vh;
+}
+#container img
+{
+    width: 20vw;
+    margin-left: 1.5vw;
+    border: 2px double black;
+    margin-top: -9vh;
+    /* margin-bottom: 10vh; */
+}
+#high
+{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-left: 8vw;
+    margin-top: -1vh;
+    position: relative;
+    top: 6vh;
+}
+#no
+{
+    font-size: 1.4vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+#no input
+{
+    margin-left: 3vw;
+    min-height: 1.5vw;
+    position: relative;
+    top: -1vh;
+}
+#selectp
+{
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: 40vw;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    top: -8vh;
+    font-weight: bold;
+    font-family: Agency FB;
+    font-size: 1.5vw;
+}
+#container2
+{
+    float: right;
+}
+#container2
+{
+    background-color: rgba(192,192,192,0.7);
+    max-width: 60vw;
+    font-weight: bold;
+    margin-right: 10vw;
+    min-width: 60vw;
+    min-height: 60vh;
+    font-family: Agency FB;
+    margin-bottom: 10vh;
+}
+#pack2a
+{
+    float: left;
+    /* margin-right: 5vw; */
+    background-color: orange;
+    padding: 2vh 15vw 2vh 2vw;
+    margin-top: -1.4vh;
+    border-right: 4px black solid;
+}
+#pack2b
+{
+    float: right;
+    background-color: yellowgreen;
+    padding: 2vh 2vw 2vh 15vw;
+    margin-top: -1.4vh;
+    align-content: center;
+
+}
+#header2
+{
+    background-color: rgb(89,196,90);
+    font-family: Agency FB;
+    font-size: 2vw;
+    padding: 2vh 0 2vh 0;
+    margin-top: -2vh;
+}
+#container2 img
+{
+    width: 20vw;
+    margin-left: 1.5vw;
+    border: 2px double black;
+    margin-top: -9vh;
+    /* margin-bottom: 10vh; */
+}
+#high2
+{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-left: 8vw;
+    margin-top: -1vh;
+    position: relative;
+    top: 6vh;
+}
+#no2
+{
+    font-size: 1.4vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+#no2 input
+{
+    margin-left: 3vw;
+    min-height: 1.5vw;
+    position: relative;
+    top: -1vh;
+}
+#selectp2
+{
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: 40vw;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    top: -8vh;
+    font-weight: bold;
+    font-family: Agency FB;
+    font-size: 1.5vw;
+}
+#container3
+{
+    float: right;
+}
+#container3
+{
+    background-color: rgba(192,192,192,0.7);
+    max-width: 60vw;
+    font-weight: bold;
+    margin-right: 10vw;
+    min-width: 60vw;
+    min-height: 60vh;
+    font-family: Agency FB;
+    margin-bottom: 10vh;
+}
+#pack3a
+{
+    float: left;
+    /* margin-right: 5vw; */
+    background-color: orange;
+    padding: 2vh 15vw 2vh 2vw;
+    margin-top: -1.4vh;
+    border-right: 4px black solid;
+}
+#pack3b
+{
+    float: right;
+    background-color: yellowgreen;
+    padding: 2vh 2vw 2vh 16.3vw;
+    margin-top: -1.4vh;
+    align-content: center;
+
+}
+#header3
+{
+    background-color: rgb(89,196,90);
+    font-family: Agency FB;
+    font-size: 2vw;
+    padding: 2vh 0 2vh 0;
+    margin-top: -2vh;
+}
+#container3 img
+{
+    width: 20vw;
+    margin-left: 1.5vw;
+    border: 2px double black;
+    margin-top: -40vh;
+    /* margin-bottom: 10vh; */
+}
+#high3
+{
+    display: inline-block;
+    font-size: 1.5vw;
+    margin-left: 8vw;
+    margin-top: -1vh;
+    position: relative;
+    top: 6vh;
+}
+#no3
+{
+    font-size: 1.4vw;
+    margin-left: 3vw;
+    margin-top: 10vh;
+}
+#no3 input
+{
+    margin-left: 3vw;
+    min-height: 1.5vw;
+    position: relative;
+    top: -1vh;
+}
+#selectp3
+{
+    padding: 1vw 2vw 1vw 2vw;
+    margin-left: 40vw;
+    border: 0px black solid;
+    border-radius: 10px;
+    background-color: orange;
+    position: relative;
+    top: -8vh;
+    font-weight: bold;
+    font-family: Agency FB;
+    font-size: 1.5vw;
+}
+header
+{
+    color: aqua;
+}

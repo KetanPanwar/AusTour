@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Package 2</title>
+  <link rel="stylesheet" type="text/css" href="project1.css">
+  <link rel="stylesheet" href="bs.css">
+  <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+<h2 style="text-align:center">Your Current Package</h2>
+<h1 style="text-align:center; font-family: agency FB">Highlights of Your Tour(6N/7D)</h1> 
+<div class="container">
+  <div class="mySlides" align="middle">
+    <div class="numbertext">1 / 6</div>
+    <img src="agold-coast-surfers-paradise.jpg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">2 / 6</div>
+    <img src="burleigh-heads.jpg" style="width:100%" >
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">3 / 6</div>
+    <img src="bluemountains.jpeg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">4 / 6</div>
+    <img src="cruise.jpg" style="width:100%">
+  </div>
+  <div class="mySlides" align="middle">
+    <div class="numbertext">5 / 6</div>
+    <img src="aquarium2.jpg" style="width:100%">
+  </div>    
+  <div class="mySlides" align="middle">
+    <div class="numbertext">6 / 6</div>
+    <img src="sydney.jpg" style="width:100%">
+  </div>    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="agold-coast-surfers-paradise.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gold Coast Surfers Paradise (Day 1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="burleigh-heads.jpg" style="width:100%" onclick="currentSlide(2)" alt="Burleigh Heads (Day 2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bluemountains.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Blue Mountains (Day 5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cruise.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cruise (Day 4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="aquarium2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Aquarium (Day 6)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="sydney.jpg" style="width:100%" onclick="currentSlide(6)" alt="Sydney (Day 7) ">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<h1 style="font-family: agency FB; text-align: center;">Day wise Itinerary</h1> <br>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 1</h2>
+<div class="parallax" style="background-image: url('agold-coast-surfers-paradise - Copy.jpg');"></div>
+<div class="maintxt" style="height:350px">
+ <blockquote style="font-size: 30px"> -->> Brisbane/Gold Coast <<--</blockquote> <br>
+Arrive at Brisbane airport, and we will take you to your hotel at Gold Coast which is about an hour drive
+Check–in at Gold Coast Hotel and day at leisure to explore the nearby shopping area and surrounding.<br> Your hotel will be walking distance from the world famous Surfers’ Paradise.<br> The beachfront hosts interesting flea market twice every week.<br>
+Overnight at Hotel in Gold Coast.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 2</h2>
+<div class="parallax" style="background-image: url('burleigh-heads - Copy.jpg');" ></div>
+<div class="maintxt" style="height:360px">
+<blockquote style="font-size: 30px"> -->> Gold Coast : Excursion to Sea World <<--</blockquote><br>
+After a sumptuous breakfast at hotel, day will be at leisure to create your own itinerary by adding our recommended tours.<br> Gold Coast has interesting theme parks like Sea World, Warner Bros -Movie World, Dream World and Wet’n’Wild World.<br>
+For those who love to explore beaches, our top recommendation is Burleigh Heads.<br> It is about 30 minutes’ drive from Surfers Paradise, and considered amongst the best beaches of Australia.<br>
+Overnight at Hotel in Gold Coast.<br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 3</h2>
+<div class="parallax" style=" background-image: url('movieworld.png');"></div>
+<div class="maintxt" style="height:200px">
+<blockquote style="font-size: 30px">-->>Gold Coast : Excursion to Movie World <<--</blockquote><br>
+Enjoy hot buffet breakfast at your hotel and head to Movie World
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 4</h2>
+<div class="parallax" style="background-image: url('cruise - Copy.jpg');"></div>
+<div class="maintxt" style="height:400px">
+<blockquote style="font-size: 30px">-->> Gold Coast to Sydney : Show Boat Dinner Cruise <<--</blockquote><br>
+Arrive in Sydney and check into the hotel.<br>  Enjoy the Sydney Show Boat dinner cruise in the evening.<br>
+Your hotel will be located in central district area, not far from China Town and Darling Harbour. <br>Enjoy both offering multiple dining options in these areas or take a cab to the beautiful Royal Botanical Gardens, offering perfect views of Sydney harbour
+Overnight at the hotel.<br> Dresscode: Men are required to wear trousers and Women are
+expected to be dress semi-formal or formal. <br>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 5</h2>
+<div class="parallax" style="background-image: url('bluemountains - Copy.jpeg');"></div>
+<div class="maintxt" style="height:360px">
+<blockquote style="font-size: 30px">-->> Sydney : Blue Mountain Tour <<--</blockquote><br>
+Head for the Blue Mountain.<br> The tour includes ticket for Scenic Rides, which also has world’s steepest funicular train ride. <br>Day trip includes Featherdale Wildlife Park & return Cruise included in Family Category. <br>Cruise drops at harbour (not at hotel).<br>
+Overnight at Hotel in Sydney.<br>
+</div>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 6</h2>
+<div class="parallax" style="background-image: url('aquarium.jpg');"></div>
+<div class="maintxt" style="height:400px">
+<blockquote style="font-size: 30px">-->> Sydney Combo Pass <<--</blockquote><br>
+Today, enjoy the Sydney Tower and Aquarium with your combination ticket. <br>
+You could add the city tour at an additional cost.<br> In this,  acquaint yourself with Sydney's iconic sights, glorious harbour and stunning beaches as you glide through the streets in an air conditioned bus.<br> Explore Sydney's famous attractions, bays and surf beaches & learn about its varied attractions through a professional commentary provided.<br> Witness the many marvels of the city as: Sydney Opera house(outside), the Rocks, Queen Victoria building, Bondi beach and many more!<br>
+Overnight at hotel in Sydney.<br>
+</div>
+</div>
+<h2 style="text-align:center;background-color: white;font-family: agency FB;padding: 0px 0px">Day 7</h2>
+<div class="parallax" style="background-image: url('sydney - Copy.jpg');"></div>
+<div class="maintxt" style="height:300px">
+<blockquote style="font-size: 30px">-->> Departure <<--</blockquote><br>
+After a sumptuous breakfast at hotel, check out of the hotel and board your coach for your transfer to the Sydney airport.<br>
+Bid goodbye to Australia with Memories Unlimited!<br>
+
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+          
+    <div class="navbar-header">
+        
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="30px" style="display:inline;margin-top: -5px;margin-right: 10px;">Traveler's Bliss</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Tourism.html">Home</a></li>
+      <li><a href="search_flights.php">Flights</a></li>
+      <li><a href="hotel package3.html">Hotels</a></li>
+      <li><a href="package 3.html">Packages</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup_page.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login_page.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<button type="button" class="block" onclick="handle1()">Proceed</button>
+<script>
+  function handle1()
+            {
+                window.open("finalpage.php","_self");
+            }
+</script>
+
+</body>
+</html>
